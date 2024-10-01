@@ -1,16 +1,9 @@
 
-
 body {
   margin-inline: 10rem;
   padding: 0%;
   height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(static/pexels-sebastians-1276518.jpg);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #ffffff;
+  background-color: #C1DC9F;
 }
 
 .Navigation {
@@ -18,12 +11,10 @@ body {
   top: 0;
   z-index: 2;
 }
-
-
-#Skills{
-  border-radius: 12px;
+spline-viewer{
+  width: 75rem;
+  border: 2px solid rgb(0, 0, 0);
 }
-
 ul {
   list-style-type: none;
   text-decoration: none;
@@ -71,10 +62,7 @@ li a:hover {
 .aboutme p {
   font-size: 20pt;
 }
-.aboutme p:hover{
-  background-color: #0f0000;
-  padding: 10pt;
-}
+
 .aboutme h3 {
   font-size: 45pt;
 }
