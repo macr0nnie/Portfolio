@@ -1,7 +1,5 @@
 body {
-  margin-inline: 10rem;
-  padding: 0%;
-  height: 100%;
+
   background-color: #c1dc9f;
 }
 .Navigation {
@@ -34,14 +32,14 @@ li a {
 li a:hover {
   border: 2px solid rgb(0, 0, 0);
 }
+
 .WebpageHeading {
   font-size: 64px;
   text-align: center;
   font-family: "Rampart One";
-  -webkit-text-stroke: 1px #864d4d;
+  -webkit-text-stroke: 1px #110000;
   -webkit-text-fill-color: #F7FFCC;
   -webkit-text-stroke-width: 0.12%;
-  color: #fab8ec;
 
 }
 .comments {
@@ -55,19 +53,30 @@ li a:hover {
   align-items: center;
   justify-items: space-between;
   gap: 2%;
+  align-self: ce;
+
 }
 .sectionheading{
   color: rgb(201, 84, 125);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 4em;
+  font-size: 2rem;
+}
+#profilepic{
+  width: 131pt;
+  border-radius: 9px;
+  border: 4px solid rgba(234,252,243,1);
+  margin-right: 1rem;
+}
+#libaryCard{
+  display: flex;
+  align-items: first baseline;
 }
 .backgroundcard{
   background-color: white;
   color: black;
   font-size: 2rem;
-  width: 50%;
-  height: 5rem;
-  padding: 5px;
+  width: 30%;
+  padding: 1%;
   border-radius: 9px;
   border-width: 19px;
   border: 4px solid rgba(234,252,243,1);
