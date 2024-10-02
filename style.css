@@ -38,6 +38,10 @@ li a:hover {
   font-size: 64px;
   text-align: center;
   font-family: "Rampart One";
+  -webkit-text-stroke: 1px #864d4d;
+  -webkit-text-fill-color: #F7FFCC;
+  -webkit-text-stroke-width: 0.12%;
+  color: #fab8ec;
 
 }
 .comments {
@@ -48,6 +52,7 @@ li a:hover {
 }
 .page-container{
   display: flex;
+  align-items: center;
 }
 .backgroundcards{
   background-color: white;
