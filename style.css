@@ -1,24 +1,21 @@
-
 body {
   margin-inline: 10rem;
   padding: 0%;
   height: 100%;
-  background-color: #C1DC9F;
+  background-color: #c1dc9f;
 }
-
 .Navigation {
   position: sticky;
   top: 0;
   z-index: 2;
 }
-spline-viewer{
+spline-viewer {
   width: 75rem;
   border: 2px solid rgb(0, 0, 0);
 }
 ul {
   list-style-type: none;
   text-decoration: none;
-  
 }
 
 li {
@@ -35,16 +32,35 @@ li a {
   color: rgb(255, 255, 255);
 }
 li a:hover {
-
   border: 2px solid rgb(0, 0, 0);
-
 }
 .WebpageHeading {
-  font-size: 45px;
+  font-size: 64px;
   text-align: center;
-  color: #ffffff;
-  
+  font-family: "Rampart One";
+
 }
+.comments {
+  font-family: "Outfit";
+  color: #000000;
+  text-align: left;
+
+}
+.page-container{
+  display: flex;
+}
+.backgroundcards{
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  width: 40%;
+  padding: 5px;
+  border-radius: 9px;
+  border-width: 19px;
+  border: 4px solid rgba(234,252,243,1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .aboutme {
   display: flex;
   border-radius: 25px;
@@ -68,12 +84,12 @@ li a:hover {
 }
 
 /* Project Page */
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10%;
-    gap: 10px;
-    align-items: center;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10%;
+  gap: 10px;
+  align-items: center;
 }
 
 .imgformat {
@@ -84,5 +100,3 @@ li a:hover {
   float: left;
   width: 50%;
 }
-
-
