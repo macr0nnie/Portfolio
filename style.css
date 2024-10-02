@@ -8,7 +8,7 @@ spline-viewer {
 }
 
 .WebpageHeading {
-  font-size: 64px;
+  font-size: 4.5rem;
   text-align: center;
   font-family: "Rampart One";
   -webkit-text-stroke: 1px #110000;
@@ -22,18 +22,28 @@ spline-viewer {
   text-align: left;
 
 }
+.pagestructure-grid{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.experience{
+  /* this should contain the css for multiple rectacles in one grid element
+  but they should be allowed to wrap or not be sqeezed in */
+}
+
+
 .page-container{
   display: flex;
   align-items: center;
   gap: 2%;
   justify-content: center;
- 
-
 }
 .sectionheading{
-  color: rgb(201, 84, 125);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 2rem;
+  color:#F24AD6;
+  font-family: "League Spartan";
+  font-weight: 800;
+  font-size: 3.5rem;
+  font-style: bold;
 }
 #profilepic{
   width: 131pt;
