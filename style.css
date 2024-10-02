@@ -53,12 +53,20 @@ li a:hover {
 .page-container{
   display: flex;
   align-items: center;
+  justify-items: space-between;
+  gap: 2%;
 }
-.backgroundcards{
+.sectionheading{
+  color: rgb(201, 84, 125);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 4em;
+}
+.backgroundcard{
   background-color: white;
   color: black;
-  font-size: 30px;
-  width: 40%;
+  font-size: 2rem;
+  width: 50%;
+  height: 5rem;
   padding: 5px;
   border-radius: 9px;
   border-width: 19px;
