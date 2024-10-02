@@ -6,10 +6,8 @@ spline-viewer {
   max-width: 75rem;
   border: 2px solid rgb(0, 0, 0);
 }
-#skills{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+.skills{
+ 
   
 }
 .WebpageHeading {
@@ -27,10 +25,17 @@ spline-viewer {
 }
 .pagestructure-grid{
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 300px 2fr 1fr ;
+
+  gap: 10px;
+  margin-left: 5rem;
 }
 .experience{
-  
+
+}
+.aboutme{
+  display: flex;
+  justify-content: center;
 }
 .experience-cards{
   background-color: white;
@@ -90,5 +95,26 @@ spline-viewer {
   border-width: 19px;
   border: 4px solid rgba(234,252,243,1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+footer{
+  background-color: rgb(8, 65, 49);
+  margin: 0;
+  padding: 0%;
+}
+
+/*Generic Classes */
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown{
+  opacity:0;
+  visibility: hidden;
+}
+
+button:focus-within .dropdown{
+  opacity: 1;
+  visibility: visible;
 }
 
