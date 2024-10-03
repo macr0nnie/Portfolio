@@ -24,6 +24,7 @@ spline-viewer {
   text-align: left;
 
 }
+<<<<<<< Updated upstream
 .Form {
   max-width: 500px;
   margin: 0 auto;
@@ -65,6 +66,35 @@ button:hover {
 }
 
 
+=======
+.pagestructure-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr ;
+  grid-template-areas: 
+  "item1 . item2"
+  ". item3 .";
+
+  gap: 10px;
+  margin-left: 5rem;
+}
+
+.item1{
+  grid-area: item1;
+  background: #000000;
+}
+.item2{
+  grid-area: item2;
+}
+.item3{
+  grid-area: item3;
+}
+.item4{
+  grid-area: item3;
+}
+.item5{
+  grid-area: item3;
+}
+>>>>>>> Stashed changes
 .experience{
   flex-direction: column;
   row-gap: 100px;
@@ -149,5 +179,8 @@ footer{
 button:focus-within .dropdown{
   opacity: 1;
   visibility: visible;
+}
+break{
+
 }
 
