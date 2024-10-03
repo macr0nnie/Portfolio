@@ -18,9 +18,7 @@
   <div class="page-container">
     <div class="sectionheading"> ABOUT ME </div>
     <div class="backgroundcard">
-      <div class="comments">
-        Hi, im ronniesha. Welcome to my portfolio. I love developing and making games!
-      </div>
+      <div class="comments"> Hi, im ronniesha. Welcome to my portfolio. I love developing and making games!</div>
     </div>
     <div id="libaryCard">
       <div class="comments">
@@ -34,19 +32,24 @@
       <img id="profilepic" src="static/instaprofile.jpg" alt="Profile picture of Ronniesha">
     </div>
   </div>
-  </div>
   <!-- Experience Section-->
   <div class="experience">
     <div class="sectionheading"> EXPERIENCE </div>
-    <div class="backgroundcard"> <div class="comments"> Penn State</div></div>
-    <div class="backgroundcard"> <div class="comments"> Penn State</div></div>
-    <div class="backgroundcard"> <div class="comments"> Penn State</div></div>
-  </div>
-  </div>
-  </div>
-  </div>
+    <div class="backgroundcard">
+      <div class="comments"> Penn State</div>
+    </div>
+    <div class="backgroundcard">
+      <div class="comments"> Penn State</div>
+    </div>
+    <div class="backgroundcard">
+      <div class="comments"> Penn State</div>
+    </div>
   </div>
 
+  </div>
+  </div>
+  </div>
+  </div>
   <div class="break"></div>
   <div class="skills flex">
     <p class="comments"> hover over the books!</p>
@@ -54,7 +57,26 @@
     <spline-viewer url="https://prod.spline.design/M-2ESSn60ZHgdK0p/scene.splinecode"></spline-viewer>
   </div>
 
+  <div class="Form">
+    <form id="contactForm">
+      <h2>Contact Me</h2>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
   <script src="scripts.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 <footer>
 

@@ -1,7 +1,20 @@
-import { Application } from '@splinetool/runtime';
+(function () {
+  emailjs.init("luvronnie906@gmail.com"); // Replace with your actual EmailJS user ID
+})();
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-const canvas = document.getElementById('canvas3d');
-const app = new Application(canvas);
-app.load('https://prod.spline.design/M-2ESSn60ZHgdK0p/scene.splinecode');
-
-
+    emailjs.sendForm("service_o7oy1nh", "template_l9goeik", this).then(
+      function () {
+        console.log("SUCCESS!");
+        alert("Message sent successfully!");
+        document.getElementById("contactForm").reset();
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        alert("Failed to send message. Please try again.");
+      }
+    );
+  });
