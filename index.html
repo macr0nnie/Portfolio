@@ -35,14 +35,19 @@
       <h1 class="WebpageHeading">welcome to ronniesha’s portfolio</h1>
     </header>
     <section id="about">
-      <div class="page-container">
-        <div class="sectionheading">ABOUT ME</div>
-        <div class="about-content">
+      <div class="containera">
+        <div class="element-1">
+          <div class="sectionheading">ABOUT ME</div>
+        </div>
+        <div class="element-2">
           <div class="about-text backgroundcard">
             <p class="comments">Hi, I'm Ronniesha. Welcome to my portfolio. I love developing and making games!</p>
           </div>
+        </div>
+        <div class="element-3">
           <div id="libraryCard" class="library-card">
-            <img id="profilepic" src="static/instaprofile.jpg" alt="Profile picture of Ronniesha" class="library-card-image" />
+            <img id="profilepic" src="static/instaprofile.jpg" alt="Profile picture of Ronniesha"
+              class="library-card-image" />
             <div class="library-card-content">
               <h3 class="library-card-title">Hello, my name is Ronniesha!</h3>
               <ul class="library-card-details">
@@ -56,68 +61,116 @@
       </div>
     </section>
 
-    <div class="containera">
-      <div class="element-1">
-          <div class="sectionheading">ABOUT ME</div>
-      </div>
-      <div class="element-2">
-          <div class="about-text backgroundcard">
-              <p class="comments">Hi, I'm Ronniesha. Welcome to my portfolio. I love developing and making games!</p>
+ 
+
+    <section id="experience">
+      <div class="containera-experience">
+          <div class="element-1-experience">
+              <div class="sectionheading">EXPERIENCE</div>
           </div>
-      </div>
-      <div class="element-3">
-          <div id="libraryCard" class="library-card">
-              <img id="profilepic" src="static/instaprofile.jpg" alt="Profile picture of Ronniesha" class="library-card-image" />
-              <div class="library-card-content">
-                  <h3 class="library-card-title">Hello, my name is Ronniesha!</h3>
-                  <ul class="library-card-details">
-                      <li>Penn State University Information</li>
-                      <li>B.S in Information Technology</li>
-                      <li>Security Analyst Focus</li>
+          <div class="element-2-experience">
+              <div class="experience-card">
+                  <h3 class="job-title">IT Corporate Functions Intern</h3>
+                  <p class="company">Endo Pharmaceuticals, Malvern, PA</p>
+                  <p class="date">May 2023 - August 2023</p>
+                  <ul class="job-description">
+                      <li>Developed technical documentation for software applications</li>
+                      <li>Created data visualizations from 10,000 fields in ServiceNow</li>
+                      <li>Translated technical information for non-technical stakeholders</li>
+                      <li>Collaborated on browser extension management using Microsoft Intune</li>
+                      <li>Automated workflows with Python, enhancing efficiency</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="element-3-experience">
+              <div class="experience-card">
+                  <h3 class="job-title">Student Teacher</h3>
+                  <p class="company">Microsoft TEALS Technology and Education Program</p>
+                  <p class="date">September 2022 – May 2023</p>
+                  <ul class="job-description">
+                      <li>Led Java programming lessons for AP Computer Science students</li>
+                      <li>Designed instructional materials for diverse learning styles</li>
+                      <li>Facilitated hands-on coding exercises in a supportive environment</li>
                   </ul>
               </div>
           </div>
       </div>
-  </div>
+  </section>
   
 
-    <section id="experience">
-      <div class="sectionheading">EXPERIENCE</div>
-      <div class="experience-container">
-        <div class="experience-card">
-          <h3 class="job-title">IT Corporate Functions Intern</h3>
-          <p class="company">Endo Pharmaceuticals, Malvern, PA</p>
-          <p class="date">May 2023 - August 2023</p>
-          <ul class="job-description">
-            <li>Developed technical documentation for software applications</li>
-            <li>Created data visualizations from 10,000 fields in ServiceNow</li>
-            <li>Translated technical information for non-technical stakeholders</li>
-            <li>Collaborated on browser extension management using Microsoft Intune</li>
-            <li>Automated workflows with Python, enhancing efficiency</li>
-          </ul>
-        </div>
-        <div class="experience-card">
-          <h3 class="job-title">Student Teacher</h3>
-          <p class="company">Microsoft TEALS Technology and Education Program</p>
-          <p class="date">September 2022 – May 2023</p>
-          <ul class="job-description">
-            <li>Led Java programming lessons for AP Computer Science students</li>
-            <li>Designed instructional materials for diverse learning styles</li>
-            <li>Facilitated hands-on coding exercises in a supportive environment</li>
-          </ul>
+  <section id="projects">
+    <div class="containera-projects">
+      <div class="element-1-projects">
+        <div class="sectionheading">PROJECTS</div>
+      </div>
+      <div class="element-2-projects">
+        <div class="book-shelf">
+          <!-- Book 1 -->
+          <div class="book-container">
+            <h3 class="book-title">Web Projects</h3>
+            <div id="book1" class="book">
+              <div class="paper" id="p1-1">
+                <div class="front">
+                  <div id="f1-1" class="front-content">
+                    <h3>Web Project 1</h3>
+                    <img src="static/CapstoneProject.PNG" alt="Web Project 1">
+                    <p>Description of Web Project 1.</p>
+                  </div>
+                </div>
+                <div class="back">
+                  <div id="b1-1" class="back-content">
+                    <h3>Web Project 2</h3>
+                    <img src="static/cloudbackground.jpg" alt="Web Project 2">
+                    <p>Description of Web Project 2.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="book-controls">
+              <button class="prev-btn" data-book="book1">Previous</button>
+              <button class="next-btn" data-book="book1">Next</button>
+            </div>
+          </div>
+  
+          <!-- Book 2 -->
+          <div class="book-container">
+            <h3 class="book-title">Mobile Apps</h3>
+            <div id="book2" class="book">
+              <div class="paper" id="p2-1">
+                <div class="front">
+                  <div id="f2-1" class="front-content">
+                    <h3>Mobile App 1</h3>
+                    <img src="static/mobile-app1-image.jpg" alt="Mobile App 1">
+                    <p>Description of Mobile App 1.</p>
+                  </div>
+                </div>
+                <div class="back">
+                  <div id="b2-1" class="back-content">
+                    <h3>Mobile App 2</h3>
+                    <img src="static/mobile-app2-image.jpg" alt="Mobile App 2">
+                    <p>Description of Mobile App 2.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="book-controls">
+              <button class="prev-btn" data-book="book2">Previous</button>
+              <button class="next-btn" data-book="book2">Next</button>
+            </div>
+          </div>
+  
+          <!-- Add more books as needed -->
         </div>
       </div>
-    </section>
-    
+    </div>
+  </section>
+  
+
+
+  
 
 
 
-
-
-    <section id="projects">
-      <div class="sectionheading experienceheading">MY WORKS</div>
-      <!-- Project showcase here -->
-    </section>
 
     <section id="skills">
       <div class="page-container">
@@ -131,45 +184,11 @@
         </div>
       </div>
     </section>
-    
-
-    
 
 
 
 
-    <section id="projects">
-      <div class="page-container">
-        <div class="sectionheading">MY PROJECTS</div>
-        <div class="projects-container">
-          <div class="project-card">
-            <div class="image-carousel">
-              <img src="static/CapstoneProject.PNG" alt="Project 1 Image 1" class="project-image active">
-              <img src="static/2.png" alt="Project 1 Image 2" class="project-image">
-              <img src="path/to/project1-image3.jpg" alt="Project 1 Image 3" class="project-image">
-            </div>
-            <h3 class="project-name">Senior Capstone Project</h3>
-            <p class="project-description"> Updated the school user interface design</p>
-          </div>
-    
-          <div class="project-card">
-            <div class="image-carousel">
-              <img src="static/cloudbackground.jpg" alt="Project 2 Image 1" class="project-image active">
-              <img src="static/JLP07717_pp.jpg" alt="Project 2 Image 2" class="project-image">
-              <img src="path/to/project2-image3.jpg" alt="Project 2 Image 3" class="project-image">
-            </div>
-            <h3 class="project-name">Project 2 Name</h3>
-            <p class="project-description">Description of Project 2. This is a brief overview of what the project entails and what technologies were used.</p>
-          </div>
-    
-          <!-- Repeat for additional projects -->
-        </div>
-      </div>
-    </section>
-    
-    </section>
-    
-  
+
     <section id="contact">
       <div class="formbg">
         <div class="Form">
@@ -206,7 +225,7 @@
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
 </body>
 
- 
+
 
 
 </html>

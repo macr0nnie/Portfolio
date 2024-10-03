@@ -40,30 +40,48 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-document.querySelectorAll('.project-card').forEach(card => {
-  const images = card.querySelectorAll('.project-image');
-  let currentIndex = 0;
 
-  function showImage(index) {
-      images.forEach(img => img.classList.remove('active'));
-      images[index].classList.add('active');
-  }
 
-  // Automatically change images every few seconds
-  setInterval(() => {
-      currentIndex = (currentIndex + 1) % images.length; // Loop back to first image
-      showImage(currentIndex);
-  }, 3000); // Change image every three seconds
-});
-
-// code for loading the spline scenelocaly
+//project
 document.addEventListener('DOMContentLoaded', function() {
-  fetch('static/bookshelf.spline')
-      .then(response => response.json())
-      .then(sceneData => {
-          const viewer = new SplineViewer();
-          viewer.load(sceneData);
-          document.querySelector('.skills-viewer').appendChild(viewer);
-      })
-      .catch(error => console.error('Error loading Spline scene:', error));
-});
+  
+  const books = document.querySelectorAll('.book');
+  
+  books.forEach(book => {
+    
+  const prevBtn = book.nextElementSibling.querySelector('.prev-btn');
+  const nextBtn = book.nextElementSibling.querySelector('.next-btn');
+  const papers = book.querySelectorAll('.paper');
+  let currentLocation = 0;
+  
+  function flipToPage(pageIndex) {
+  papers.forEach((paper, index) => {
+  if (index === pageIndex) {
+  paper.classList.remove('flipped'); // Show the front
+  } else if (index === pageIndex + 1) {
+  paper.classList.add('flipped'); // Show the back
+  } else {
+  paper.classList.remove('flipped'); // Hide others
+  }
+  });
+  currentLocation = pageIndex + (pageIndex + 1 === papers.length ? -1 : +0);
+  }
+  
+  function goNextPage() {
+  if (currentLocation + 1 < papers.length) { // Check if there's a next page
+  flipToPage(currentLocation + 1);
+  }
+  }
+  
+  function goPrevPage() {
+  if (currentLocation > -1) { // Check if there's a previous page
+  flipToPage(currentLocation - (currentLocation === -1 ? -0 : +0));
+  }
+  }
+  
+  // Event listeners for buttons
+  prevBtn.addEventListener('click', goPrevPage);
+  nextBtn.addEventListener('click', goNextPage);
+  });
+  });
+  
