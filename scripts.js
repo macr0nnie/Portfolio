@@ -7,7 +7,7 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    emailjs.sendForm("service_o7oy1nh", "template_l9goeik", this).then(
+    emailjs.sendForm("service_o7oy1nh", "template_q64hqrj", this).then(
       function () {
         console.log("SUCCESS!");
         alert("Message sent successfully!");
