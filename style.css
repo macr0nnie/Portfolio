@@ -23,20 +23,12 @@ spline-viewer {
   text-align: left;
 
 }
-.pagestructure-grid{
-  display: grid;
-  grid-template-columns: 300px 2fr 1fr ;
 
-  gap: 10px;
-  margin-left: 5rem;
-}
 .experience{
+  flex-direction: column;
+  gap: 100px;
+}
 
-}
-.aboutme{
-  display: flex;
-  justify-content: center;
-}
 .experience-cards{
   background-color: white;
   color: black;
@@ -62,7 +54,7 @@ spline-viewer {
   background: linear-gradient(to right, #C56DE5,#F24AD6);
   -webkit-background-clip: text;
   color: transparent;
-
+  align-self: flex-start;
 }
 #profilepic{
   width: 75pt;
