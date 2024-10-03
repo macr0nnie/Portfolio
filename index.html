@@ -14,22 +14,27 @@
 
 <body>
 
-  <header>
-    <h1 class="WebpageHeading">welcome to ronniesha’s portfolio</h1>
+
+  <div class="sidebar-trigger"></div>
+  <aside class="sidebar">
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About Me</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">linkdin</a></li>
+        <li><a href="https://macronnie.itch.io/">itch.io</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </aside>
 
-  <main>
+  <main class="main-content">
+    <header>
+      <h1 class="WebpageHeading">welcome to ronniesha’s portfolio</h1>
+    </header>
     <section id="about">
-
-
       <div class="page-container">
         <div class="sectionheading">ABOUT ME</div>
         <div class="backgroundcard">
@@ -38,17 +43,15 @@
             making games!
           </p>
         </div>
-        <div id="libaryCard">
-          <div class="comments">
-            <p>Hello, my name is Ronniesha!</p>
-            <ul>
+        <div id="libaryCard" class="library-card"><img id="profilepic" src="static/instaprofile.jpg" alt="Profile picture of Ronniesha"class="library-card-image" />
+          <div class="library-card-content">
+            <h3 class="library-card-title">Hello, my name is Ronniesha!</h3>
+            <ul class="library-card-details">
               <li>Penn State University Information</li>
               <li>B.S in Information Technology</li>
               <li>Security Analyst Focus</li>
             </ul>
           </div>
-          <img id="profilepic" src="static/instaprofile.jpg" alt="Profile picture of Ronniesha" />
-        </div>
     </section>
 
     <section id="experience">
@@ -94,7 +97,7 @@
 
     <section id="skills">
       <!-- Skills list here -->
-   <div class="sectionheading experienceheading">SKILLS</div>
+      <div class="sectionheading experienceheading">SKILLS</div>
       <div class="skills flex">
         <p class="comments">hover over the books!</p>
         <spline-viewer url="https://prod.spline.design/M-2ESSn60ZHgdK0p/scene.splinecode"></spline-viewer>
@@ -102,9 +105,35 @@
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
-      <!-- Education details here -->
+      <div class="sectionheading">MY PROJECTS</div>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="path/to/project1-image.jpg" alt="Project 1" class="project-image">
+          <h3 class="project-name">Project 1 Name</h3>
+          <p class="project-description">Description of Project 1. This is a brief overview of what the project entails
+            and what technologies were used.</p>
+        </div>
+        <div class="project-card">
+          <img src="path/to/project2-image.jpg" alt="Project 2" class="project-image">
+          <h3 class="project-name">Project 2 Name</h3>
+          <p class="project-description">Description of Project 2. This is a brief overview of what the project entails
+            and what technologies were used.</p>
+        </div>
+        <div class="project-card">
+          <img src="path/to/project3-image.jpg" alt="Project 3" class="project-image">
+          <h3 class="project-name">Project 3 Name</h3>
+          <p class="project-description">Description of Project 3. This is a brief overview of what the project entails
+            and what technologies were used.</p>
+        </div>
+        <div class="project-card">
+          <img src="path/to/project4-image.jpg" alt="Project 4" class="project-image">
+          <h3 class="project-name">Project 4 Name</h3>
+          <p class="project-description">Description of Project 4. This is a brief overview of what the project entails
+            and what technologies were used.</p>
+        </div>
+      </div>
     </section>
+
 
     <section id="contact">
       <div class="formbg">

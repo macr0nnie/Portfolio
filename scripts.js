@@ -19,3 +19,24 @@ document
       }
     );
   });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const sidebar = document.querySelector('.sidebar');
+  const sidebarTrigger = document.querySelector('.sidebar-trigger');
+  const mainContent = document.querySelector('.main-content');
+
+  if (sidebarTrigger && sidebar && mainContent) {
+    sidebarTrigger.addEventListener('mouseenter', function () {
+      sidebar.classList.add('active');
+      mainContent.classList.add('sidebar-active');
+    });
+
+    sidebar.addEventListener('mouseleave', function () {
+      sidebar.classList.remove('active');
+      mainContent.classList.remove('sidebar-active');
+    });
+  } else {
+    console.error('Sidebar elements not found');
+  }
+});
+
