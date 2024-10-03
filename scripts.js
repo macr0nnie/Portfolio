@@ -56,3 +56,14 @@ document.querySelectorAll('.project-card').forEach(card => {
   }, 3000); // Change image every three seconds
 });
 
+// code for loading the spline scenelocaly
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('static/bookshelf.spline')
+      .then(response => response.json())
+      .then(sceneData => {
+          const viewer = new SplineViewer();
+          viewer.load(sceneData);
+          document.querySelector('.skills-viewer').appendChild(viewer);
+      })
+      .catch(error => console.error('Error loading Spline scene:', error));
+});
