@@ -40,3 +40,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+document.querySelectorAll('.project-card').forEach(card => {
+  const images = card.querySelectorAll('.project-image');
+  let currentIndex = 0;
+
+  function showImage(index) {
+      images.forEach(img => img.classList.remove('active'));
+      images[index].classList.add('active');
+  }
+
+  // Automatically change images every few seconds
+  setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length; // Loop back to first image
+      showImage(currentIndex);
+  }, 3000); // Change image every three seconds
+});
+
