@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   background-color: #c1dc9f;
+  font-family: "Outfit";
 }
 
 p{
@@ -9,6 +10,45 @@ p{
   padding: 0%;
   margin: 0%;
 }
+
+
+/*ABOUT ME */
+
+.containera {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; /* Space between elements */
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding around the container */
+}
+
+.element-1 {
+  grid-column: 1; /* First column */
+  grid-row: 1 / span 2; /* Span two rows */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element-2 {
+  grid-column: 2; /* Second column */
+  grid-row: 1; /* First row of second column */
+}
+
+.element-3 {
+  grid-column: 2; /* Second column */
+  grid-row: 2; /* Second row of second column */
+}
+
+
+
+
+
+
+
+
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
@@ -192,6 +232,7 @@ p{
 
 /*side bars are the worst*/
 .sidebar {
+  
   width: 200px;
   background-color: #f072db;
   padding: 20px;
@@ -201,12 +242,12 @@ p{
   height: 100vh;
   transition: right 0.3s ease;
   z-index: 1000;
+
 }
 
 .sidebar.active {
   right: 0; /* Show the sidebar */
 }
-
 .sidebar-trigger {
   position: fixed;
   top: 0;
