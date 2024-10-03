@@ -99,6 +99,7 @@ p{
 
 
 .page-container{
+  padding: 10%;
   display: flex;
   align-items: flex-start;
   gap: 2%;
