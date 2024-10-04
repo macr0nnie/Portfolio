@@ -83,15 +83,17 @@ p{
   }
 }
 
-
 /* Projects Section */
+
+
 .containera-projects {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  
 }
 
 .element-1-projects {
@@ -208,7 +210,18 @@ p{
 
 /*  experience */
 
+#experience{
+  padding: 40px 0;
+}
+#projects{
+  padding: 40px 0;
+}
+#skills{
+  padding: 40px 0;
+}
+
 .containera-experience {
+  
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns */
   gap: 20px; /* Space between elements */
@@ -245,7 +258,6 @@ p{
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 20px;
-
     /* Set a maximum width for the experience card */
     max-width: none; /* Remove max-width to allow full width */
     
@@ -441,7 +453,7 @@ p{
 
 #about {
   padding: 40px 0; /* Add vertical padding */
-  margin-right: 300px;
+  
   
 }
 .page-container {
@@ -462,7 +474,7 @@ p{
   font-size: 1rem;
   width: 100%; /* Make it responsive */
   padding: 20px;
-  border-radius: 7px;
+  border-radius: 10px;
   border: 4px solid rgba(234,252,243,1);
   box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
@@ -481,9 +493,9 @@ p{
 .library-card-image {
   width: 75pt; /* Fixed width for uniformity */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 7pt; 
-  margin-right: 16x; /* Space between image and text */
-  padding-inline: 10px;
+  border-radius: 20pt; 
+  margin-right: 7; /* Space between image and text */
+  padding: 20px;
 }
 
 .library-card-content {
@@ -500,7 +512,6 @@ p{
    list-style-type:none; /* Remove bullet points */
    padding-left:0; /* Remove left padding */
 }
-
 
 /*this section is experience :C */
 .experience-cards
@@ -521,6 +532,7 @@ p{
   border: 4px solid rgba(234,252,243,1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* feet stuff*/
 footer{
   background-color: var(--sidebarcolor);
   margin: 0;
@@ -529,7 +541,7 @@ footer{
 
 .site-footer {
   background-color: --backgroundcolor;
-  color: --text_accent_color;
+  color: white;
   padding: 40px 20px;
   font-family: 'Outfit', sans-serif; /* Your site's font */
 }
@@ -546,7 +558,7 @@ footer{
   font-family: 'League Spartan', sans-serif; /* Heading font */
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: var(--text_accent_color) /* Green color to match your theme */
+  color: rgb(66, 21, 21);/* Green color to match your theme */
 }
 
 .footer-section p,
@@ -572,7 +584,7 @@ footer{
 }
 
 .footer-section a:hover {
-  color: #7b85d0; /* Darker green on hover */
+  color: #a5c4c4; /* Darker green on hover */
   text-decoration: none;
   text-decoration: underline;
 }
@@ -581,7 +593,7 @@ footer{
   text-align: center;
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #ede0e0;
   font-size: 0.9rem;
 }
 
@@ -592,10 +604,6 @@ footer{
   }
 }
 
-
-
-
-/*Generic Classes */
 .flex{
   display: flex;
   align-items: center;
@@ -616,7 +624,7 @@ break{
 /*Form*/
 
 .formbg{
-  background-color: #FFD8BE;
+  background-color: #faede5;
   z-index: -1;
   margin: 0%;
   padding-inline:10%;
@@ -629,7 +637,7 @@ break{
   max-width: 700px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgb(247, 253, 253);
+  background-color: rgb(198, 216, 224);
   border-radius: 3px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -653,7 +661,6 @@ textarea {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16pt;
-  
 }
 
 button {
@@ -680,6 +687,7 @@ spline-viewer {
 
 #skills {
   padding: 40px 0;
+  margin-left: 120px;
 }
 
 .skills-content {
