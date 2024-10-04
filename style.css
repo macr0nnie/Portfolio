@@ -12,6 +12,9 @@ body{
   background-color: var(--backgroundcolor);
   font-family: "Outfit";
 }
+section{
+  margin-bottom: 10%;
+}
 p{
   font-size: 1.4rem;
   padding: 0%;
@@ -85,7 +88,6 @@ p{
 
 /* Projects Section */
 /* Projects Section */
-/* Projects Section */
 .container-projects {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -119,6 +121,7 @@ p{
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+  margin-top: 100px;
 }
 
 .project-card:hover {
@@ -373,10 +376,8 @@ spline-viewer {
   border-radius: 7px;
 }
 
-
 #skills {
-  padding: 40px 0;
-  margin-left: 120px;
+  padding: 100px 0;
 }
 
 .skills-content {
@@ -388,7 +389,6 @@ spline-viewer {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .skills-viewer {
   width: 100%;
   max-width: 70rem;
@@ -398,8 +398,8 @@ spline-viewer {
   background-color: white;
   padding: 20px;
   margin-left: 80px;
+  margin-bottom: 40px;
 }
-
 .containera-skills {
   display: grid;
   grid-template-columns: 1fr 3fr; /* Two-column layout */
