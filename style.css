@@ -1,5 +1,5 @@
 :root{
-  --heading: #e5ffe6;
+  --heading: #cbffe1;
   --sidebarcolor: #2e1377;
   --backgroundcolor: #9280c4;
   --text_accent_color: #b2cbe7;
@@ -21,6 +21,90 @@ p{
   margin: 0%;
 }
 /*ABOUT ME */
+
+
+
+.page-container {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sectionheading {
+  color: #000000;
+  font-family: "League Spartan";
+  font-weight: 800;
+  font-size: 3.5rem;
+  font-style: bold;
+  background: var(--section_heading);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  width: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center elements */
+}
+.about-content {
+  display: flex;
+  align-items: flex-start; /* Align items at the start */
+  gap: 20px; /* Space between text and card */
+  width: 300px; /* Make it responsive */
+  max-width: 1200px; /* Limit max width */
+}
+.backgroundcard {
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  width: 100%; /* Make it responsive */
+  padding: 20px;
+  border-radius: 10px;
+  border: 4px solid rgba(234,252,243,1);
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.highlight{
+  color: rgb(237, 54, 210);
+}
+
+.library-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content to the left */
+  border-radius: 8px;
+  border: 4px solid rgba(234,252,243,1);
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  background-color: white;
+  width: auto; /* Make it responsive */
+  height: 200px;
+}
+
+.library-card-image {
+  width: 120pt; /* Fixed width for uniformity */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20pt; 
+  margin-right: 7; /* Space between image and text */
+  padding: 20px;
+}
+.library-card-content {
+   flex-grow:1; /* Allow content to take remaining space */
+}
+.library-card-title {
+   font-size:1.rem;
+   color:#333;
+   margin-bottom:10px; /* Space below title */
+}
+.library-card-details {
+   list-style-type:none; /* Remove bullet points */
+   padding-left:0; /* Remove left padding */
+   text-align: left;
+}
+
 .containera {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns */
@@ -42,12 +126,6 @@ p{
   grid-column: 2; /* Second column */
   grid-row: 1; /* First row of second column */
 }
-
-.element-3 {
-  grid-column: 2; /* Second column */
-  grid-row: 2; /* Second row of second column */
-}
-
 
 .grid-container {
   display: grid;
@@ -78,7 +156,6 @@ p{
 }
 
 
-
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .projects-container {
@@ -92,7 +169,7 @@ p{
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 20px;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -107,12 +184,6 @@ p{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-}
-
-.sectionheading {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 2rem;
-  color: #333;
 }
 
 .project-card {
@@ -281,8 +352,8 @@ p{
 .WebpageHeading {
   font-size: 4.5rem;
   text-align: center;
-  font-family: "Rampart One";
-  text-shadow: -0px -1px #110000, 1px -1px 0 #110000, -1px 1px 0 #110000, 1px 1px 0 #110000;
+  font-family: "Dm";
+  text-shadow: -1px -1px #110000, 1px -1px 0 #110000, -1px 1px 0 #110000, 1px 1px 0 #110000;
   -webkit-text-fill-color: var(--heading);
 }
 .comments {
@@ -336,10 +407,7 @@ p{
   grid-row: 2; /* Second row of second column */
 }
 
-/* Additional styling for content */
-.sectionheading {
-    font-size: 2rem;
-}
+
 
 .experience-card {
     background-color: white;
@@ -368,7 +436,6 @@ p{
     }
 }
 /* Skills Section */
-
 spline-viewer {
   width: 100%;
   max-width: 80rem;
@@ -377,7 +444,7 @@ spline-viewer {
 }
 
 #skills {
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 .skills-content {
@@ -527,7 +594,7 @@ spline-viewer {
   margin-right: 100px; /* Initially no margin */
 }
 .main-content.sidebar-active {
-  margin-right: 280px; /* Push content when sidebar is active */
+  margin-right: 10px; /* Push content when sidebar is active */
 }
 .sidebar nav ul {
   list-style-type: none; /* Remove bullet points */
@@ -549,88 +616,6 @@ spline-viewer {
   color: #FFD700; /* Change link color on hover */
 }
 
-
-.page-container {
-  padding: 5% 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.sectionheading {
-  color: #000000;
-  font-family: "League Spartan";
-  font-weight: 800;
-  font-size: 3.5rem;
-  font-style: bold;
-  background: var(--section_heading);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  width: 100%;
-}
-
-.page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center elements */
-}
-.about-content {
-  display: flex;
-  align-items: flex-start; /* Align items at the start */
-  gap: 20px; /* Space between text and card */
-  width: 300px; /* Make it responsive */
-  max-width: 1200px; /* Limit max width */
-}
-.backgroundcard {
-  background-color: white;
-  color: black;
-  font-size: 1rem;
-  width: 100%; /* Make it responsive */
-  padding: 20px;
-  border-radius: 10px;
-  border: 4px solid rgba(234,252,243,1);
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-}
-
-.highlight{
-  color: rgb(237, 54, 210);
-}
-
-.library-card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Aligns content to the left */
-  border-radius: 8px;
-  border: 4px solid rgba(234,252,243,1);
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-  background-color: white;
-  width: 600px; /* Make it responsive */
-}
-
-.library-card-image {
-  width: 75pt; /* Fixed width for uniformity */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 20pt; 
-  margin-right: 7; /* Space between image and text */
-  padding: 20px;
-}
-
-.library-card-content {
-   flex-grow:1; /* Allow content to take remaining space */
-}
-
-.library-card-title {
-   font-size:1.5rem;
-   color:#333;
-   margin-bottom:10px; /* Space below title */
-}
-
-.library-card-details {
-   list-style-type:none; /* Remove bullet points */
-   padding-left:0; /* Remove left padding */
-}
 
 /*this section is experience :C */
 .experience-cards
