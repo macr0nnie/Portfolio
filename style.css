@@ -596,33 +596,6 @@ footer{
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Generic Classes */
 .flex{
   display: flex;
@@ -644,13 +617,12 @@ break{
 /*Form*/
 
 .formbg{
-  background-color: #0b1e05;
+  background-color: #2a2130;
   z-index: -1;
   margin: 0%;
   padding-inline:10%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 .Form {
   z-index: 1;
