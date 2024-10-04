@@ -1,10 +1,10 @@
 :root{
-  --heading: #f6e6ff;
-  --darkgreen: #364A3C;
-  --backgroundcolor: #c1e4d3;
-  --text_accent_color: #586ccf;
+  --heading: #f6ebbe;
+  --sidebarcolor: #37774b;
+  --backgroundcolor: #264b3a;
+  --text_accent_color: #5c4a8b;
   --button_color:  #91d0c6;
-  --section_heading: linear-gradient(to right, #3c8d79,#83af9d);
+  --section_heading: linear-gradient(to right, #ffffff,#ffffff);
 
 }
 
@@ -225,7 +225,7 @@ p{
 /*side bars are the worst*/
 .sidebar {
   width: 200px;
-  background-color: var(--darkgreen);
+  background-color: var(--sidebarcolor);
   padding: 20px;
   position: fixed;
   top: 0;
@@ -246,7 +246,7 @@ p{
   width: 40px;
   height: 100vh;
   z-index: 999;
-  background-color: --darkgreen; /* Semi-transparent trigger area */
+  background-color: --sidebarcolor; /* Semi-transparent trigger area */
   cursor: pointer;
 }
 
@@ -386,16 +386,14 @@ p{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 footer{
-  background-color: rgb(8, 65, 49);
+  background-color: var(--sidebarcolor);
   margin: 0;
   padding: 0%;
 }
 
-
-
 .site-footer {
-  background-color: #081b11; /* Light background to match your theme */
-  color: #333; /* Dark text for contrast */
+  background-color: --backgroundcolor;
+  color: --text_accent_color;
   padding: 40px 20px;
   font-family: 'Outfit', sans-serif; /* Your site's font */
 }
@@ -412,13 +410,14 @@ footer{
   font-family: 'League Spartan', sans-serif; /* Heading font */
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #4CAF50; /* Green color to match your theme */
+  color: var(--text_accent_color) /* Green color to match your theme */
 }
 
 .footer-section p,
 .footer-section ul {
   margin-bottom: 15px;
   line-height: 1.6;
+  
 }
 
 .footer-section ul {
@@ -431,13 +430,14 @@ footer{
 }
 
 .footer-section a {
-  color: #7dd580; /* Green color for links */
+  color: #d4f6d5; /* Green color for links */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-  color: #1c5f1f; /* Darker green on hover */
+  color: #7b85d0; /* Darker green on hover */
+  text-decoration: none;
   text-decoration: underline;
 }
 
@@ -504,10 +504,12 @@ break{
 /*Form*/
 
 .formbg{
-  background-color: #364A3C;
+  background-color: #493031;
   z-index: -1;
   margin: 0%;
-  padding: 10%;
+  padding-inline:10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 
 
 }
