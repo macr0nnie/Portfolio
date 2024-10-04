@@ -1,19 +1,17 @@
 :root{
-  --heading: #b4ecb7;
-  --sidebarcolor: #9a95bb;
+  --heading: #e5ffe6;
+  --sidebarcolor: #8d6de6;
   --backgroundcolor: #9280c4;
   --text_accent_color: #b2cbe7;
-  --button_color:  #91d0c6;
+  --button_color:  #d9addd;
   --section_heading: linear-gradient(to right, #ffffff,#ffffff);
 }
-
 body{
   margin: 0;
   padding: 0;
   background-color: var(--backgroundcolor);
   font-family: "Outfit";
 }
-
 p{
   font-size: 1.4rem;
   padding: 0%;
@@ -150,7 +148,7 @@ p{
 .project-link {
   display: inline-block;
   padding: 8px 15px;
-  background-color: #4CAF50;
+  background-color:var(--button_color) ;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -158,9 +156,8 @@ p{
 }
 
 .project-link:hover {
-  background-color: #45a049;
+  background-color: #7b85d0;
 }
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .containera-projects {
@@ -619,7 +616,7 @@ break{
 /*Form*/
 
 .formbg{
-  background-color: #b2c0ae;
+  background-color: #FFD8BE;
   z-index: -1;
   margin: 0%;
   padding-inline:10%;
@@ -720,6 +717,3 @@ spline-viewer {
 }
 
 /* General Styles */
-
-
-
