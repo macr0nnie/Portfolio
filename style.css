@@ -1,11 +1,10 @@
 :root{
-  --heading: #f6ebbe;
-  --sidebarcolor: #7ab88e;
-  --backgroundcolor: #638374;
-  --text_accent_color: #c9b4ff;
+  --heading: #b4ecb7;
+  --sidebarcolor: #9a95bb;
+  --backgroundcolor: #9280c4;
+  --text_accent_color: #b2cbe7;
   --button_color:  #91d0c6;
   --section_heading: linear-gradient(to right, #ffffff,#ffffff);
-
 }
 
 body{
@@ -595,30 +594,6 @@ footer{
     text-align: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
