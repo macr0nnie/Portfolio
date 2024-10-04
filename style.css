@@ -86,6 +86,98 @@ p{
   }
 }
 
+
+/* Projects Section */
+.containera-projects {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.element-1-projects {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.element-2-projects {
+  width: 100%;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-title {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-description {
+  font-family: 'Outfit', sans-serif;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .containera-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .element-1-projects {
+    justify-content: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .skills{
   padding: 5rem;
   display: flex;
@@ -178,6 +270,54 @@ p{
     .element-1-experience {
         grid-row: auto; /* Reset row span */
     }
+}
+/* Skills Section */
+.containera-skills {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Two-column layout */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.element-1-skills {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.element-2-skills {
+  width: 100%;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #ffffff; /* Card background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Shadow effect */
+  padding: 20px; /* Padding inside card */
+}
+
+.skill-card h3 {
+  font-family: 'League Spartan', sans-serif; /* Heading font */
+  font-size: 1.2rem; /* Adjust as needed */
+}
+
+.skill-card p {
+  font-family: 'Outfit', sans-serif; /* Body font */
+}
+
+/* Responsive adjustments */
+@media (max-width:768px) {
+   .containera-skills {
+       grid-template-columns:1fr ; 
+       padding :10px ;
+   }
 }
 
 
@@ -504,13 +644,12 @@ break{
 /*Form*/
 
 .formbg{
-  background-color: #493031;
+  background-color: #0b1e05;
   z-index: -1;
   margin: 0%;
   padding-inline:10%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-
+  padding-top: 3%;
+  padding-bottom: 3%;
 
 }
 .Form {
