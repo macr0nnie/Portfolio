@@ -1,7 +1,17 @@
+:root{
+  --heading: #f6e6ff;
+  --darkgreen: #364A3C;
+  --backgroundcolor: #c1e4d3;
+  --text_accent_color: #586ccf;
+  --button_color:  #91d0c6;
+  --section_heading: linear-gradient(to right, #3c8d79,#83af9d);
+
+}
+
 body{
   margin: 0;
   padding: 0;
-  background-color: #c1dc9f;
+  background-color: var(--backgroundcolor);
   font-family: "Outfit";
 }
 
@@ -10,10 +20,7 @@ p{
   padding: 0%;
   margin: 0%;
 }
-
-
 /*ABOUT ME */
-
 .containera {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns */
@@ -71,62 +78,6 @@ p{
 }
 
 
-.projects-container {
-  display: flex;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  padding: 20px;
-  scroll-snap-type: x mandatory; /* Snap to each project card */
-}
-
-.project-card {
-  flex: 0 0 auto; /* Prevent shrinking */
-  width: calc(300px); /* Fixed width for each card */
-  margin-right: 20px; /* Space between cards */
-  background-color: white;
-  border-radius: 7px;
-  border: 4px solid rgba(234,252,243,1);
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-  scroll-snap-align: start; /* Aligns card at the start when scrolling */
-}
-
-.image-carousel {
-  position: relative;
-}
-
-.project-image {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  opacity: 0;
-  transition: opacity .5s ease-in-out;
-}
-
-.project-image.active {
-  opacity: 1; /* Show active image */
-}
-
-.project-name {
-  font-family: "League Spartan", sans-serif;
-  font-size: 1.5rem;
-  color: #F24AD6;
-}
-
-.project-description {
-   font-family: "Outfit", sans-serif;
-   color: #000000;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.projects-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.projects-container {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-
-
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
@@ -134,7 +85,6 @@ p{
     grid-template-columns: 1fr; /* Stack projects vertically on smaller screens */
   }
 }
-
 
 .skills{
   padding: 5rem;
@@ -148,8 +98,8 @@ p{
   font-size: 4.5rem;
   text-align: center;
   font-family: "Rampart One";
-  text-shadow: -1px -1px 0 #110000, 1px -1px 0 #110000, -1px 1px 0 #110000, 1px 1px 0 #110000;
-  -webkit-text-fill-color: #F7FFCC;
+  text-shadow: -0px -1px #110000, 1px -1px 0 #110000, -1px 1px 0 #110000, 1px 1px 0 #110000;
+  -webkit-text-fill-color: var(--heading);
 }
 .comments {
   font-family: "Outfit";
@@ -243,7 +193,7 @@ p{
 .job-title {
   font-family: "League Spartan", sans-serif;
   font-size: 1.5rem;
-  color: #F24AD6;
+  color: var(--text_accent_color);
   margin-bottom: 10px;
 }
 
@@ -253,8 +203,8 @@ p{
 }
 
 .date {
-  font-style: italic;
   margin-bottom: 15px;
+  font: px;
 }
 
 .job-description {
@@ -274,9 +224,8 @@ p{
 
 /*side bars are the worst*/
 .sidebar {
-  
   width: 200px;
-  background-color: #f072db;
+  background-color: var(--darkgreen);
   padding: 20px;
   position: fixed;
   top: 0;
@@ -294,10 +243,10 @@ p{
   position: fixed;
   top: 0;
   right: 0;
-  width: 20px;
+  width: 40px;
   height: 100vh;
   z-index: 999;
-  background-color: rgba(240, 114, 219, 0.3); /* Semi-transparent trigger area */
+  background-color: --darkgreen; /* Semi-transparent trigger area */
   cursor: pointer;
 }
 
@@ -307,10 +256,10 @@ p{
 
 .main-content {
   transition: margin-right 0.3s ease;
-  margin-right: 0; /* Initially no margin */
+  margin-right: 280px; /* Initially no margin */
 }
 .main-content.sidebar-active {
-  margin-right: 200px; /* Push content when sidebar is active */
+  margin-right: 280px; /* Push content when sidebar is active */
 }
 .sidebar nav ul {
   list-style-type: none; /* Remove bullet points */
@@ -342,42 +291,17 @@ p{
 }
 
 .sectionheading {
-  color: #F24AD6;
+  color: #000000;
   font-family: "League Spartan";
   font-weight: 800;
   font-size: 3.5rem;
   font-style: bold;
-  background: linear-gradient(to right, #C56DE5,#F24AD6);
+  background: var(--section_heading);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   width: 100%;
 }
-
-#profilepic{
-  width: 75pt;
-  border-radius: 9px;
-  border: 4px solid rgba(234,252,243,1);
-  margin-bottom: 30pt;
-}
-
-
-
-
-.library-card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Aligns content to the left */
-  border-radius: 8px;
-  border: 4px solid rgba(234, 252, 243, 1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: white;
-  width: 350px;
-  padding: 15px;
-  margin-bottom: 30px; /* Space below the card */
-}
-
-
 
 #about {
   padding: 40px 0; /* Add vertical padding */
@@ -422,7 +346,7 @@ p{
 .library-card-image {
   width: 75pt; /* Fixed width for uniformity */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Circular image */
+  border-radius: 7pt; /* Circular image */
   margin-right: 15px; /* Space between image and text */
 }
 
@@ -442,7 +366,7 @@ p{
 }
 
 
-
+/*this section is experience :C */
 .experience-cards
 {
   background-color: white;
@@ -466,6 +390,98 @@ footer{
   margin: 0;
   padding: 0%;
 }
+
+
+
+.site-footer {
+  background-color: #081b11; /* Light background to match your theme */
+  color: #333; /* Dark text for contrast */
+  padding: 40px 20px;
+  font-family: 'Outfit', sans-serif; /* Your site's font */
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h2 {
+  font-family: 'League Spartan', sans-serif; /* Heading font */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #4CAF50; /* Green color to match your theme */
+}
+
+.footer-section p,
+.footer-section ul {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #7dd580; /* Green color for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #1c5f1f; /* Darker green on hover */
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Generic Classes */
 .flex{
@@ -591,133 +607,3 @@ spline-viewer {
 
 
 
-/* Project Section Styling */
-#projects {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.containera-projects {
-  display: grid;
-  grid-template-columns: 1fr 3fr; /* Adjust ratio as needed */
-  gap: 20px;
-}
-
-.element-1-projects {
-  grid-column: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.element-2-projects {
-  grid-column: 2;
-}
-
-/* Book Shelf */
-.book-shelf {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px; /* Space between books */
-}
-
-/* Book Container */
-.book-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Book Title */
-.book-title {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
-/* Book Styles */
-.book {
-  position: relative;
-  width: 100%;
-  max-width: 350px; /* Adjust as needed */
-}
-
-.paper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.front,
-.back {
-  background-color: white; /* Page background color */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /* Shadow effect */
-}
-
-.front {
-  z-index: 1; /* Bring front page on top */
-}
-
-.back {
- z-index: 0; /* Back page behind front page */
- transform: rotateY(180deg); /* Rotate back page for flipping effect */
- backface-visibility: hidden; /* Prevent back from showing when flipped */
-}
-
-/* Content Styling */
-.front-content,
-.back-content {
- width: 100%;
- height: auto; /* Adjust height based on content */
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- padding: 20px; /* Padding inside pages */
- text-align: center; /* Center text */
-}
-
-.front-content img,
-.back-content img {
- width: 80%; /* Responsive image size */
- height: auto; /* Maintain aspect ratio */
- border-radius: 4px; /* Rounded image corners */
-}
-
-/* Button Styling */
-.book-controls {
- display: flex;
- justify-content: center;
- gap: 10px; /* Space between buttons */
- margin-top: 10px; /* Space above buttons */
-}
-
-.prev-btn,
-.next-btn {
- background-color: #4CAF50; /* Button color */
- color: white; /* Button text color */
- border-radius: 5px; /* Rounded corners for buttons */
- border:none; 
- padding:10px 
-}
-
-/* Button Hover Effect */
-.prev-btn:hover,
-.next-btn:hover {
- background-color:#45a049
-}
-
-/* Responsive Design for Smaller Screens */
-@media (max-width:768px) {
- .containera-projects {
-     grid-template-columns : 1fr ; 
-     padding :10px 
- }
-
- .book-container {
-     width :100% 
- }
-}
