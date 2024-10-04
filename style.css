@@ -1,6 +1,6 @@
 :root{
   --heading: #e5ffe6;
-  --sidebarcolor: #8d6de6;
+  --sidebarcolor: #301380;
   --backgroundcolor: #9280c4;
   --text_accent_color: #b2cbe7;
   --button_color:  #d9addd;
@@ -711,9 +711,6 @@ button:hover {
   background-color: #9dd7a0;
 }
 
-
-
-
 .comments {
   font-family: "Outfit", sans-serif;
   color: #000000;
@@ -722,4 +719,3 @@ button:hover {
   margin-bottom: 10px;
 }
 
-/* General Styles */
