@@ -1,8 +1,8 @@
 :root{
-  --heading: #f6ebbe;
+  --heading: #e9a2dd;
   --sidebarcolor: #37774b;
   --backgroundcolor: #264b3a;
-  --text_accent_color: #5c4a8b;
+  --text_accent_color: hsl(309, 100%, 94%);
   --button_color:  #91d0c6;
   --section_heading: linear-gradient(to right, #ffffff,#ffffff);
 
@@ -364,14 +364,14 @@ p{
 
 /*side bars are the worst*/
 .sidebar {
-  width: 200px;
+  width: 1cm00px;
   background-color: var(--sidebarcolor);
   padding: 20px;
   position: fixed;
   top: 0;
-  right: -300px; /* Initially hidden */
+  left: 0px; /* Initially hidden */
   height: 100vh;
-  transition: right 0.3s ease;
+  transition: left 0.3s ease;
   z-index: 1000;
 
 }
@@ -379,16 +379,7 @@ p{
 .sidebar.active {
   right: 0; /* Show the sidebar */
 }
-.sidebar-trigger {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 100vh;
-  z-index: 999;
-  background-color: --sidebarcolor; /* Semi-transparent trigger area */
-  cursor: pointer;
-}
+
 
 .sidebar.active {
   right: 0; /* Show the sidebar */
@@ -526,7 +517,7 @@ p{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 footer{
-  background-color: var(--sidebarcolor);
+  background-color: rgb(236, 173, 228);
   margin: 0;
   padding: 0%;
 }
@@ -617,7 +608,7 @@ break{
 /*Form*/
 
 .formbg{
-  background-color: #2a2130;
+
   z-index: -1;
   margin: 0%;
   padding-inline:10%;
