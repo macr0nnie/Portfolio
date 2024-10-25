@@ -24,9 +24,14 @@ p{
 
 
 section{
-  margin-top: 450pt;
+
 }
 
+
+@keyframe float_to_view{
+  from {}
+  to {}
+}
 
 
 /*ABOUT ME */
@@ -713,9 +718,6 @@ spline-viewer {
 }
 
 /* General Styles */
-
-
-
 
 /* CSS RANDOM ANIMATIONS*/
 .slide-in-bottom {
