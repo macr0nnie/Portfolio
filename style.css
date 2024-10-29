@@ -37,6 +37,8 @@ p{
   align-items: center;
   flex-direction: column;
   font-family: sans-serif;
+  margin-bottom: 300px;
+  margin-top: 200px;
 }
 .gallery_container{
   columns: 3 200px;
