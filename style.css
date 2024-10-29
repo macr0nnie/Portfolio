@@ -55,12 +55,15 @@ p{
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     border-radius: 5px;
     transition: all .25s ease-in-out;
+    z-index: 1;
     &:hover img {
-     
+      
     }
     &:hover {
-      border-color: rgb(255, 80, 194);
-      
+      border-color: rgb(191, 120, 232);
+      width: 101%;
+      margin-right: 40px;
+    
     }
     img {
       width: 100%;
