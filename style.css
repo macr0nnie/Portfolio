@@ -1,11 +1,11 @@
 :root{
-  --heading: #ff72c0;
-  --sidebarcolor: #37774b;
-  --backgroundcolor: #264b3a;
+  --heading: #d8a5ee;
+  --sidebarcolor: #b59ae1;
+  --backgroundcolor: #b39cce;
   --text_accent_color: hsl(310, 80%, 81%);
   --button_color:  #91d0c6;
   --section_heading: linear-gradient(to right, #ffffff,#ffffff);
-  --footer_bg_color: #e9a2dd;
+  --footer_bg_color: #f6f7f6;
 
 }
 
@@ -14,6 +14,22 @@ body{
   padding: 0;
   background-color: var(--backgroundcolor);
   font-family: "Outfit";
+  margin-left: 150px;
+  overflow-x: hidden;
+
+  /*background squares*/
+  --color: #E1E1E1;
+  background-color: #F3F3F3;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+
+
+
+
+
+
+  
 }
 
 p{
@@ -22,12 +38,6 @@ p{
   margin: 0%;
 }
 
-
-
-@keyframe float_to_view{
-  from {}
-  to {}
-}
 
 
 /*ABOUT ME */
@@ -89,114 +99,8 @@ p{
 
 
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: 1fr; /* Stack projects vertically on smaller screens */
-  }
-}
-
-
-/* Projects Section */
-.containera-projects {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.element-1-projects {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.element-2-projects {
-  width: 100%;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.project-info {
-  padding: 20px;
-}
-
-.project-title {
-  font-family: 'League Spartan', sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.project-description {
-  font-family: 'Outfit', sans-serif;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.project-link {
-  display: inline-block;
-  padding: 8px 15px;
-  background-color: #4CAF50;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.project-link:hover {
-  background-color: #45a049;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .containera-projects {
-    grid-template-columns: 1fr;
-  }
-
-  .element-1-projects {
-    justify-content: center;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-.skills{
-  padding: 5rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 2%;
-  justify-content: center;
-}
-
 .WebpageHeading {
+  margin-right: -.5rem;
   font-size: 4.5rem;
   text-align: center;
   font-family: "Rampart One";
@@ -252,6 +156,7 @@ p{
 /* Additional styling for content */
 .sectionheading {
     font-size: 2rem;
+   
 }
 
 .experience-card {
@@ -383,6 +288,16 @@ p{
   height: 100vh;
   transition: left 0.3s ease;
   z-index: 1000;
+
+
+
+
+
+
+
+
+
+  
 }
 
 .sidebar.active {
@@ -393,7 +308,7 @@ p{
   right: 0; /* Show the sidebar */
 }
 .main-content {
-  transition: margin-right 0.3s ease;
+  margin-right: 100px;
 }
 .main-content.sidebar-active {
   margin-right: 280px; /* Push content when sidebar is active */
@@ -415,7 +330,7 @@ p{
 }
 
 .sidebar nav ul li a:hover {
-  color: #ff42c6; /* Change link color on hover */
+  color: #70ff8f; /* Change link color on hover */
 }
 
 
@@ -484,7 +399,10 @@ p{
   width: 75pt; /* Fixed width for uniformity */
   height: auto; /* Maintain aspect ratio */
   border-radius: 7pt; /* Circular image */
-  margin-right: 15px; /* Space between image and text */
+  margin-bottom: 30px;
+  border: 4px solid rgba(234,252,243,1);
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+
 }
 
 .library-card-content {
@@ -522,76 +440,9 @@ p{
   border: 4px solid rgba(234,252,243,1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-footer{
-  background-color: var(--footer_bg_color);
-  margin: 0;
-  padding: 0%;
-}
 
-.site-footer {
-  background-color: --backgroundcolor;
-  color: --text_accent_color;
-  padding: 40px 20px;
-  font-family: 'Outfit', sans-serif; /* Your site's font */
-}
 
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-.footer-section h2 {
-  font-family: 'League Spartan', sans-serif; /* Heading font */
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: var(--text_accent_color) /* Green color to match your theme */
-}
-
-.footer-section p,
-.footer-section ul {
-  margin-bottom: 15px;
-  line-height: 1.6;
-  
-}
-
-.footer-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 10px;
-}
-
-.footer-section a {
-  color: #d4f6d5; /* Green color for links */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
-  color: #7b85d0; /* Darker green on hover */
-  text-decoration: none;
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid #ddd;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
 
 /*Generic Classes */
 .flex{
@@ -626,9 +477,10 @@ break{
   max-width: 700px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgb(237, 253, 252);
-  border-radius: 3px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: white;
+  border-radius: 10px;
+  border: 4px solid rgba(234,252,243,1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .form-group {
@@ -714,45 +566,3 @@ spline-viewer {
 }
 
 /* General Styles */
-
-/* CSS RANDOM ANIMATIONS*/
-.slide-in-bottom {
-	-webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-/* ----------------------------------------------
- * Generated by Animista on 2024-10-25 12:27:7
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation slide-in-bottom
- * ----------------------------------------
- */
- @-webkit-keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(1000px);
-            transform: translateY(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(1000px);
-            transform: translateY(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
