@@ -308,44 +308,7 @@ button {
 }
 
 
-.element-1-skills {
-  display: flex;
-  justify-content: flex-start;
-}
 
-.element-2-skills {
-  width: 100%;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-  gap: 20px;
-}
-
-.skill-card {
-  background-color: #ffffff; /* Card background color */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Shadow effect */
-  padding: 20px; /* Padding inside card */
-}
-
-.skill-card h3 {
-  font-family: 'League Spartan', sans-serif; /* Heading font */
-  font-size: 1.2rem; /* Adjust as needed */
-}
-
-.skill-card p {
-  font-family: 'Outfit', sans-serif; /* Body font */
-}
-
-/* Responsive adjustments */
-@media (max-width:768px) {
-   .containera-skills {
-       grid-template-columns:1fr ; 
-       padding :10px ;
-   }
-}
 #experience{
   width: 90%;
   max-width: 600px;
@@ -765,10 +728,6 @@ spline-viewer {
 }
 
 #skills {
-  padding: 40px 0;
-}
-
-.skills-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -778,14 +737,22 @@ spline-viewer {
   margin: 0 auto;
 }
 
+.skills-content {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .skills-viewer {
   width: 100%;
   max-width: 75rem;
-  border: 4px solid rgba(234,252,243,1);
+  border: 2px solid rgba(234,252,243,1);
   border-radius: 7px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: white;
-  padding: 20px;
+  padding: 10px;
 }
 
 spline-viewer {
