@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 :root {
   --heading: #d8a5ee;
   --sidebarcolor: #b59ae1;
@@ -316,115 +315,6 @@ button.learn-more:active::before {
 }
 
 /*ABOUT ME */
-=======
-:root{
-  --heading: #f3f2e8;
-  --sidebarcolor: #7912da;
-  --backgroundcolor: #9280c4;
-  --text_accent_color: #b2cbe7;
-  --button_color:  #d9addd;
-  --section_heading: linear-gradient(to right, #ffffff,#ffffff);
-}
-body{
-  margin: 0;
-  padding: 0;
-  background-color: var(--backgroundcolor);
-  font-family: "Outfit";
-}
-section{
-  margin-bottom: 10%;
-}
-p{
-  font-size: 1.4rem;
-  padding: 0%;
-  margin: 0%;
-}
-/*ABOUT ME */
-
-
-
-.page-container {
-  padding: 5% 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.sectionheading {
-  color: #000000;
-  font-family: "League Spartan";
-  font-weight: 800;
-  font-size: 3.5rem;
-  font-style: bold;
-  background: var(--section_heading);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  width: 100%;
-}
-
-.page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center elements */
-}
-.about-content {
-  display: flex;
-  align-items: flex-start; /* Align items at the start */
-  gap: 20px; /* Space between text and card */
-  width: 300px; /* Make it responsive */
-  max-width: 1200px; /* Limit max width */
-}
-.backgroundcard {
-  background-color: white;
-  color: black;
-  font-size: 1rem;
-  width: 100%; /* Make it responsive */
-  padding: 20px;
-  border-radius: 10px;
-  border: 4px solid rgba(234,252,243,1);
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-}
-
-.highlight{
-  color: rgb(237, 54, 210);
-}
-
-.library-card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Aligns content to the left */
-  border-radius: 8px;
-  border: 4px solid rgba(234,252,243,1);
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-  background-color: white;
-  width: auto; /* Make it responsive */
-  height: 200px;
-}
-
-.library-card-image {
-  width: 120pt; /* Fixed width for uniformity */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 20pt; 
-  margin-right: 7; /* Space between image and text */
-  padding: 20px;
-}
-.library-card-content {
-   flex-grow:1; /* Allow content to take remaining space */
-}
-.library-card-title {
-   font-size:1.rem;
-   color:#333;
-   margin-bottom:10px; /* Space below title */
-}
-.library-card-details {
-   list-style-type:none; /* Remove bullet points */
-   padding-left:0; /* Remove left padding */
-   text-align: left;
-}
-
->>>>>>> parent of 2194abf (remove everything)
 .containera {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns */
@@ -447,14 +337,11 @@ p{
   grid-row: 1; /* First row of second column */
 }
 
-<<<<<<< HEAD
 .element-3 {
   grid-column: 2; /* Second column */
   grid-row: 2; /* Second row of second column */
 }
 
-=======
->>>>>>> parent of 2194abf (remove everything)
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
@@ -467,19 +354,11 @@ p{
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
-<<<<<<< HEAD
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .grid-item {
-=======
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.grid-item{
->>>>>>> parent of 2194abf (remove everything)
   background-color: white;
   color: black;
   font-size: 1rem;
@@ -487,7 +366,6 @@ p{
   padding: 1%;
   border-radius: 7px;
   border-width: 19px;
-<<<<<<< HEAD
   border: 4px solid rgba(234, 252, 243, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -499,19 +377,6 @@ p{
   font-family: "Outfit";
   text-shadow: -0px -1px #110000, 1px -1px 0 #110000, -1px 1px 0 #110000,
     1px 1px 0 #110000;
-=======
-  border: 4px solid rgba(234,252,243,1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-
-
-.WebpageHeading {
-  font-size: 4.5rem;
-  text-align: center;
-  font-family: "Dm";
-  text-shadow: -1px -1px #110000, 1px -1px 0 #110000, -1px 1px 0 #110000, 1px 1px 0 #110000;
->>>>>>> parent of 2194abf (remove everything)
   -webkit-text-fill-color: var(--heading);
 }
 .comments {
@@ -520,14 +385,8 @@ p{
   text-align: left;
 }
 
-<<<<<<< HEAD
 .padding {
   padding: 2%;
-=======
-.padding{
-  padding-top: 50px;
-  padding-bottom: 50px;
->>>>>>> parent of 2194abf (remove everything)
 }
 
 .flex-row {
@@ -539,15 +398,7 @@ p{
 
 /*  experience */
 
-<<<<<<< HEAD
 .containera-experience {
-=======
-
-
-
-.containera-experience {
-  
->>>>>>> parent of 2194abf (remove everything)
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns */
   gap: 20px; /* Space between elements */
@@ -574,79 +425,9 @@ p{
   grid-row: 2; /* Second row of second column */
 }
 
-<<<<<<< HEAD
 /* Additional styling for content */
 .sectionheading {
   font-size: 2rem;
-=======
-
-
-.experience-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 20px;
-    /* Set a maximum width for the experience card */
-    max-width: none; /* Remove max-width to allow full width */
-    
-    /* Allow it to take full width of its container */
-    width: calc(100% - 40px); /* Adjust for padding or margins as needed */
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .containera-experience {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
-    }
-    
-    .element-1-experience, .element-2-experience, .element-3-experience {
-        grid-column: 1; /* All elements in single column */
-    }
-
-    .element-1-experience {
-        grid-row: auto; /* Reset row span */
-    }
-}
-/* Skills Section */
-spline-viewer {
-  width: 100%;
-  max-width: 80rem;
-  border: 2px solid rgb(216, 244, 243);
-  border-radius: 7px;
-}
-
-#skills {
-  padding: 40px 0;
-}
-
-.skills-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.skills-viewer {
-  width: 100%;
-  max-width: 70rem;
-  border: 4px solid rgba(234,252,243,1);
-  border-radius: 7px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: white;
-  padding: 20px;
-  margin-left: 80px;
-  margin-bottom: 40px;
-}
-.containera-skills {
-  display: grid;
-  grid-template-columns: 1fr 3fr; /* Two-column layout */
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
->>>>>>> parent of 2194abf (remove everything)
 }
 
 .element-1-skills {
@@ -660,39 +441,26 @@ spline-viewer {
 
 .skills-grid {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: repeat(
     auto-fit,
     minmax(250px, 1fr)
   ); /* Responsive grid */
-=======
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
->>>>>>> parent of 2194abf (remove everything)
   gap: 20px;
 }
 
 .skill-card {
   background-color: #ffffff; /* Card background color */
   border-radius: 8px; /* Rounded corners */
-<<<<<<< HEAD
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
-=======
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Shadow effect */
->>>>>>> parent of 2194abf (remove everything)
   padding: 20px; /* Padding inside card */
 }
 
 .skill-card h3 {
-<<<<<<< HEAD
   font-family: "League Spartan", sans-serif; /* Heading font */
-=======
-  font-family: 'League Spartan', sans-serif; /* Heading font */
->>>>>>> parent of 2194abf (remove everything)
   font-size: 1.2rem; /* Adjust as needed */
 }
 
 .skill-card p {
-<<<<<<< HEAD
   font-family: "Outfit", sans-serif; /* Body font */
 }
 
@@ -712,19 +480,6 @@ spline-viewer {
   min-height: 100vh;
   font-size: 1.25rem;
 }
-=======
-  font-family: 'Outfit', sans-serif; /* Body font */
-}
-
-/* Responsive adjustments */
-@media (max-width:768px) {
-   .containera-skills {
-       grid-template-columns:1fr ; 
-       padding :10px ;
-   }
-}
-
->>>>>>> parent of 2194abf (remove everything)
 
 .experience-container {
   display: flex;
@@ -734,10 +489,6 @@ spline-viewer {
   padding: 20px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 2194abf (remove everything)
 .job-title {
   font-family: "League Spartan", sans-serif;
   font-size: 1.5rem;
@@ -752,11 +503,7 @@ spline-viewer {
 
 .date {
   margin-bottom: 15px;
-<<<<<<< HEAD
   font: 5px;
-=======
-  font: px;
->>>>>>> parent of 2194abf (remove everything)
 }
 
 .job-description {
@@ -774,7 +521,6 @@ spline-viewer {
   }
 }
 
-<<<<<<< HEAD
 .paper {
   font-family: "Patrick Hand", cursive;
   position: relative;
@@ -819,48 +565,20 @@ spline-viewer {
 /*side bars are the worst*/
 .sidebar {
   width: 1cm00px;
-=======
-/*side bars are the worst*/
-.sidebar {
-  width: 200px;
->>>>>>> parent of 2194abf (remove everything)
   background-color: var(--sidebarcolor);
   padding: 20px;
   position: fixed;
   top: 0;
-<<<<<<< HEAD
   left: 0px; /* Initially hidden */
   height: 100vh;
   transition: left 0.3s ease;
   z-index: 1000;
-=======
-  right: -300px; /* Initially hidden */
-  height: 100vh;
-  transition: right 0.3s ease;
-  z-index: 1000;
-
-}
-
-.sidebar.active {
-  right: 0; /* Show the sidebar */
-}
-.sidebar-trigger {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 100vh;
-  z-index: 999;
-  background-color: #340c61;/* Semi-transparent trigger area */
-  cursor: pointer;
->>>>>>> parent of 2194abf (remove everything)
 }
 
 .sidebar.active {
   right: 0; /* Show the sidebar */
 }
 
-<<<<<<< HEAD
 .sidebar.active {
   right: 0; /* Show the sidebar */
 }
@@ -869,14 +587,6 @@ spline-viewer {
 }
 .main-content.sidebar-active {
   margin-right: 280px; /* Push content when sidebar is active */
-=======
-.main-content {
-  transition: margin-right 0.3s ease;
-  margin-right: 100px; /* Initially no margin */
-}
-.main-content.sidebar-active {
-  margin-right: 10px; /* Push content when sidebar is active */
->>>>>>> parent of 2194abf (remove everything)
 }
 .sidebar nav ul {
   list-style-type: none; /* Remove bullet points */
@@ -895,7 +605,6 @@ spline-viewer {
 }
 
 .sidebar nav ul li a:hover {
-<<<<<<< HEAD
   color: #70ff8f; /* Change link color on hover */
 }
 
@@ -996,21 +705,6 @@ spline-viewer {
 }
 
 .backgroundcard {
-=======
-  color: #FFD700; /* Change link color on hover */
-}
-
-
-/*this section is experience :C */
-.experience-cards
-{
-  background-color: white;
-  color: black;
-  font-size: 1rem;
-}
-
-.backgroundcard{
->>>>>>> parent of 2194abf (remove everything)
   background-color: white;
   color: black;
   font-size: 1rem;
@@ -1018,96 +712,16 @@ spline-viewer {
   padding: 1%;
   border-radius: 7px;
   border-width: 19px;
-<<<<<<< HEAD
   border: 4px solid rgba(234, 252, 243, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*Generic Classes */
 .flex {
-=======
-  border: 4px solid rgba(234,252,243,1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-/* feet stuff*/
-footer{
-  background-color: var(--sidebarcolor);
-  margin: 0;
-  padding: 0%;
-}
-
-.site-footer {
-  background-color: --backgroundcolor;
-  color: white;
-  padding: 40px 20px;
-  font-family: 'Outfit', sans-serif; /* Your site's font */
-}
-
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-section h2 {
-  font-family: 'League Spartan', sans-serif; /* Heading font */
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: rgb(66, 21, 21);/* Green color to match your theme */
-}
-
-.footer-section p,
-.footer-section ul {
-  margin-bottom: 15px;
-  line-height: 1.6;
-  
-}
-
-.footer-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 10px;
-}
-
-.footer-section a {
-  color: #d4f6d5; /* Green color for links */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
-  color: #a5c4c4; /* Darker green on hover */
-  text-decoration: none;
-  text-decoration: underline;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid #ede0e0;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-
-.flex{
->>>>>>> parent of 2194abf (remove everything)
   display: flex;
   align-items: center;
   justify-content: center;
 }
-<<<<<<< HEAD
 .dropdown {
   opacity: 0;
   visibility: hidden;
@@ -1137,39 +751,6 @@ button:focus-within .dropdown {
   border: 4px solid rgba(234, 252, 243, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 200px;
-=======
-.dropdown{
-  opacity:0;
-  visibility: hidden;
-}
-
-button:focus-within .dropdown{
-  opacity: 1;
-  visibility: visible;
-}
-break{
-  margin-top: 30%;
-}
-/*Form*/
-
-.formbg{
-  background-color: #faede5;
-  z-index: -1;
-  margin: 0%;
-  padding-inline:10%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-
-}
-.Form {
-  z-index: 1;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: rgb(183, 152, 232);
-  border-radius: 3px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
->>>>>>> parent of 2194abf (remove everything)
 }
 
 .form-group {
@@ -1208,7 +789,6 @@ button:hover {
   background-color: #9dd7a0;
 }
 
-<<<<<<< HEAD
 spline-viewer {
   width: 100%;
   max-width: 75rem;
@@ -1245,8 +825,6 @@ spline-viewer {
   border: none;
 }
 
-=======
->>>>>>> parent of 2194abf (remove everything)
 .comments {
   font-family: "Outfit", sans-serif;
   color: #000000;
@@ -1255,7 +833,4 @@ spline-viewer {
   margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 /* General Styles */
-=======
->>>>>>> parent of 2194abf (remove everything)
