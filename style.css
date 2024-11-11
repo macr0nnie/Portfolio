@@ -237,7 +237,10 @@ p {
   }
 }
 /* 3D */
-
+.paddingtop{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 button {
   position: relative;
   display: inline-block;
@@ -248,6 +251,9 @@ button {
   text-decoration: none;
   font-family: inherit;
   font-size: 15px;
+}
+a{
+  text-decoration: none;
 }
 
 button.learn-more {
